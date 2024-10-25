@@ -1,0 +1,104 @@
+body {
+font-family: Arial, sans-serif;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+ margin: 0;
+ background-color: #f0f0f0;
+}
+
+.card {
+ background-color: white;
+ border-radius: 10px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ padding: 20px;
+ max-width: 350px;
+ width: 100%;
+ text-align: center;
+}
+
+.card h1{
+ color:rgb(219, 30, 30);
+}
+
+#status{
+  font-size: x-large;
+  font-family: fantasy;
+}
+
+#click-counter ,#random-message{
+ color: blue;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ font-weight: bold;
+}
+  
+#dog-image {
+ border-radius: 8px;
+ margin-top: 10px;
+ margin-left: 28px;
+ width: 100%;
+ max-width: 300px;
+ max-height: 300px;
+ height: auto;
+ object-fit: cover;
+}
+  
+button {
+ background-color: #4CAF50;
+ border: none;
+ color: white;
+ padding: 10px 20px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 16px;
+ margin-top: 20px;
+ cursor: pointer;
+ border-radius: 5px;
+ width: 100%;
+}
+  
+button img.dog-icon {
+ width: 30px;
+ height: 30px;
+ margin-right: 10px;
+}
+  
+.alert-popup {
+ position: fixed;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ background-color: rgba(90, 25, 165, 0.9);
+ color: white;
+ padding: 20px;
+ border-radius: 10px;
+ display: none; 
+ text-align: center;
+ z-index: 1000;
+ max-width: 300px;
+ width: 80%;
+}
+  
+.alert-popup .alert-icon {
+ width: 50px;
+ height: 50px;
+ margin-bottom: 10px;
+}
+  
+body::after {
+ content: "";
+ display: none;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: rgba(0, 0, 0, 0.5);
+ z-index: 500;
+}
+  
+body.show-alert::after {
+ display: block;
+}  
